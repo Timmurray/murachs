@@ -1,5 +1,5 @@
 # include <iostream>
-#include <cmath>
+# include <cmath>
 
 using namespace std;
 
@@ -10,14 +10,14 @@ int main()
     //get subtotal from user
     double subtotal;
     cout << "Enter a subtotal: ";
-    cin >> subtotal
+    cin >> subtotal;
 
     //determine discount percent based on subtotal
     double discount_percent;
     if (subtotal >= 300){
         discount_percent= .3;
     } else if(subtotal >= 200){
-        discount_percent = .1;
+        discount_percent = .2;
     } else if(subtotal >= 100){
         discount_percent = .1;
     } else {
