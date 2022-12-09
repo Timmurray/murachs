@@ -28,13 +28,12 @@ int main(){
 
         //calculate future value
         double future_value = 0;
-        for(int i = 1; i <= months; i++) {
-            future_value = (future_value + monthly_investment) * (1 + monthly_rate);
+        for(int i = 1; i <= years; i++) {
+            future_value = (future_value + (monthly_investment * 12)) * (1 + (yearly_rate / 100));
+            // round to 2 decimal places and display
+            future_value = round(future_value * 100) / 100;
+            cout << "Year = " << i << "\t Future Value =  " << future_value << "\n";
         }
-
-        // round to 2 decimal places and display
-        future_value = round(future_value * 100) / 100;
-        cout << "future_value:          " << future_value << "\n\n";
 
         //see if user wishes to ccontinue
         cout << "Continue? (y/n): ";
