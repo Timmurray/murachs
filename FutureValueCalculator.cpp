@@ -4,7 +4,9 @@
 using namespace std;
 
 int main(){
-    cout << "The FUture Value Calculator\n\n";
+    cout << "The Future Value Calculator\n\n";
+
+    
 
     char choice = 'y';
     while(choice == 'y' || choice == 'Y') {
